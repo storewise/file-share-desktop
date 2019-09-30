@@ -51,7 +51,7 @@ export const updateMenu = (
     {
       label: AppName,
       submenu: [
-        {label: "About Goobox", click: openAboutWindow},
+        {label: "About StoreWise File Share", click: openAboutWindow},
         {label: "Show Log", click: onShowLog},
         {label: debugMenuLabel(debug), click: () => onToggleDebugMode(!debug)},
         {type: "separator"},

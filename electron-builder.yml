@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-appId: "io.goobox.FileShareApp"
+appId: "io.storewise.FileShareApp"
 directories:
   buildResources: ""
 files:
@@ -28,7 +28,7 @@ mac:
 win:
   target: "nsis"
   icon: "src/assets/goobox.ico"
-  publisherName: "Goobox"
+  publisherName: "StoreWise"
 linux:
   target: "AppImage"
   icon: "src/assets/goobox.icns"
