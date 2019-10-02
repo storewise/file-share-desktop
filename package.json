@@ -6,6 +6,7 @@
   "scripts": {
     "start": "electron .",
     "start:debug": "DEV_TOOLS=true electron .",
+    "postinstall": "electron-builder install-app-deps",
     "build": "webpack --display-used-exports",
     "build:production": "webpack --mode production -p --display-used-exports",
     "build:watch": "webpack -w",
