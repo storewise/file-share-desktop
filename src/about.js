@@ -16,7 +16,7 @@
  */
 
 import _openAboutWindow from "about-window";
-import icon from "./assets/goobox.svg";
+import icon from "./assets/storeWiseLogo.svg";
 
 export const openAboutWindow = async () =>
   new Promise(resolve => {
