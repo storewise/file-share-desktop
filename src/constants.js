@@ -15,10 +15,10 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-export const AppName = "Goobox File Share";
-export const BaseURL = "https://goobox.io/";
+export const AppName = "StoreWise File Share";
+export const BaseURL = "https://share.storewise.tech/";
 export const AppURL = `${BaseURL}?standalone=true`;
 export const DefaultWidth = 800;
 export const DefaultHeight = 600;
 
-export const DebugModeKey = "goobox.debug";
+export const DebugModeKey = "storewise.share.debug";

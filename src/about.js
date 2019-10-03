@@ -16,15 +16,15 @@
  */
 
 import _openAboutWindow from "about-window";
-import icon from "./assets/goobox.svg";
+import icon from "./assets/storeWiseLogo.svg";
 
 export const openAboutWindow = async () =>
   new Promise(resolve => {
     const about = _openAboutWindow({
       icon_path: icon,
-      bug_report_url: "https://github.com/GooBox/file-share-desktop/issues",
-      copyright: "© Goobox",
-      homepage: "https://goobox.io/",
+      bug_report_url: "https://github.com/storewise/file-share-desktop/issues",
+      copyright: "© StoreWise",
+      homepage: "https://share.storewise.tech/",
       license: "GPL-v3",
       win_options: {
         resizable: false,

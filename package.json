@@ -1,11 +1,12 @@
 {
-  "name": "GooboxFileShare",
+  "name": "StoreWiseFileShare",
   "version": "0.3.4",
-  "description": "Goobox File Share App",
+  "description": "StoreWise File Share App",
   "main": "lib/index.js",
   "scripts": {
     "start": "electron .",
     "start:debug": "DEV_TOOLS=true electron .",
+    "postinstall": "electron-builder install-app-deps",
     "build": "webpack --display-used-exports",
     "build:production": "webpack --mode production -p --display-used-exports",
     "build:watch": "webpack -w",
@@ -22,19 +23,19 @@
     "update:install": "yarn install",
     "update:commit": "git commit -m \"chore: update dependencies\" -- package.json yarn.lock"
   },
-  "author": "Goobox <support@goobox.io> (https://goobox.io/)",
+  "author": "StoreWise <hello@storewise.tech> (https://storewise.tech/)",
   "contributors": [
     "Junpei Kawamoto <kawamoto.junpei@gmail.com> (https://www.jkawamoto.info/)"
   ],
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GooBox/file-share-desktop.git"
+    "url": "https://github.com/storewise/file-share-desktop.git"
   },
   "bugs": {
-    "url": "https://github.com/GooBox/file-share-desktop/issues"
+    "url": "https://github.com/storewise/file-share-desktop/issues"
   },
-  "homepage": "https://github.com/GooBox/file-share-desktop",
+  "homepage": "https://github.com/storewise/file-share-desktop",
   "dependencies": {
     "about-window": "^1.13.1"
   },
