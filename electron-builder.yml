@@ -14,30 +14,30 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-appId: "io.goobox.FileShareApp"
+appId: "tech.storewise.StoreWiseFileShare"
 directories:
   buildResources: ""
 files:
   - "**/*"
   - "!src"
-  - "src/assets/goobox.ico"
+  - "src/assets/storewise.ico"
 mac:
   category: "public.app-category.productivity"
-  icon: "src/assets/goobox.icns"
+  icon: "src/assets/storewise.icns"
   type: "development"
 win:
   target: "nsis"
-  icon: "src/assets/goobox.ico"
-  publisherName: "Goobox"
+  icon: "src/assets/storewise.ico"
+  publisherName: "StoreWise"
 linux:
   target: "AppImage"
-  icon: "src/assets/goobox.icns"
+  icon: "src/assets/storewise.icns"
   category: "System"
   artifactName: "${productName}-${version}.${ext}"
 nsis:
   perMachine: true
-  installerIcon: "src/assets/goobox.ico"
-  uninstallerIcon: "src/assets/goobox.ico"
+  installerIcon: "src/assets/storewise.ico"
+  uninstallerIcon: "src/assets/storewise.ico"
   license: "LICENSE"
   deleteAppDataOnUninstall: true
   artifactName: "${productName}-${version}-setup_x64.${ext}"

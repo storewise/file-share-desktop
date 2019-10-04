@@ -1,11 +1,12 @@
 {
-  "name": "GooboxFileShare",
-  "version": "0.3.4",
-  "description": "Goobox File Share App",
+  "name": "StoreWiseFileShare",
+  "version": "0.4.0",
+  "description": "StoreWise File Share App",
   "main": "lib/index.js",
   "scripts": {
     "start": "electron .",
     "start:debug": "DEV_TOOLS=true electron .",
+    "postinstall": "electron-builder install-app-deps",
     "build": "webpack --display-used-exports",
     "build:production": "webpack --mode production -p --display-used-exports",
     "build:watch": "webpack -w",
@@ -22,43 +23,43 @@
     "update:install": "yarn install",
     "update:commit": "git commit -m \"chore: update dependencies\" -- package.json yarn.lock"
   },
-  "author": "Goobox <support@goobox.io> (https://goobox.io/)",
+  "author": "StoreWise <hello@storewise.tech> (https://storewise.tech/)",
   "contributors": [
     "Junpei Kawamoto <kawamoto.junpei@gmail.com> (https://www.jkawamoto.info/)"
   ],
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GooBox/file-share-desktop.git"
+    "url": "https://github.com/storewise/file-share-desktop.git"
   },
   "bugs": {
-    "url": "https://github.com/GooBox/file-share-desktop/issues"
+    "url": "https://github.com/storewise/file-share-desktop/issues"
   },
-  "homepage": "https://github.com/GooBox/file-share-desktop",
+  "homepage": "https://github.com/storewise/file-share-desktop",
   "dependencies": {
     "about-window": "^1.13.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
-    "del-cli": "^2.0.0",
-    "electron": "^6.0.5",
+    "del-cli": "^3.0.0",
+    "electron": "^6.0.11",
     "electron-builder": "^21.2.0",
-    "electron-log": "^3.0.7",
+    "electron-log": "^3.0.8",
     "electron-updater": "^4.1.2",
-    "eslint": "^6.2.2",
-    "eslint-config-prettier": "^6.1.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^3.0.4",
-    "lint-staged": "^9.2.5",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.8",
+    "lint-staged": "^9.4.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
-    "svg-url-loader": "^3.0.0",
-    "updates": "^8.5.3",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
+    "svg-url-loader": "^3.0.2",
+    "updates": "^9.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }

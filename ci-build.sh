@@ -27,16 +27,16 @@ brew install pixeldrain
 pd -v
 
 
-WIN_ID=$(basename $(pd upload dist/GooboxFileShare-0.3.4-setup_x64.exe))
+WIN_ID=$(basename $(pd upload dist/StoreWiseFileShare-0.4.0-setup_x64.exe))
 echo "Dev build for Windows has been uploaded at ${WIN_ID}"
 
-MAC_ID=$(basename $(pd upload dist/GooboxFileShare-0.3.4.dmg))
+MAC_ID=$(basename $(pd upload dist/StoreWiseFileShare-0.4.0.dmg))
 echo "Dev build for MacOS has been uploaded at ${MAC_ID}"
 
-LINUX_ID=$(basename $(pd upload dist/GooboxFileShare-0.3.4.AppImage))
+LINUX_ID=$(basename $(pd upload dist/StoreWiseFileShare-0.4.0.AppImage))
 echo "Dev build for Linux has been uploaded at ${LINUX_ID}"
 
-LIST_URL=$(pd create-list -t "GooboxFileShare-0.3.4" ${WIN_ID}:GooboxFileShare-0.3.4-setup_x64.exe ${MAC_ID}:GooboxFileShare-0.3.4.dmg ${LINUX_ID}:GooboxFileShare-0.3.4.AppImage)
+LIST_URL=$(pd create-list -t "StoreWiseFileShare-0.4.0" ${WIN_ID}:StoreWiseFileShare-0.4.0-setup_x64.exe ${MAC_ID}:StoreWiseFileShare-0.4.0.dmg ${LINUX_ID}:StoreWiseFileShare-0.4.0.AppImage)
 echo "Download page for the dev builds are set up at ${LIST_URL}"
 
 curl -XPOST -H 'Content-Type:application/json' $DISCORD_WEBHOOK -d @- <<EOF
