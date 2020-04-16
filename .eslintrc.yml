@@ -58,9 +58,6 @@ rules:
       optionalDependencies: false
   import/no-named-as-default: "off"
   arrow-body-style: "error"
-  arrow-parens:
-    - error
-    - "as-needed"
   arrow-spacing: "error"
   generator-star-spacing: "error"
   no-duplicate-imports: "error"
