@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 Junpei Kawamoto
+ * Copyright (C) 2019-2020 StoreWise
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -64,7 +64,7 @@ const configs = [
 
 module.exports = (env, argv) => {
   if (argv.mode === "production") {
-    configs.forEach(c => (c.devtool = false));
+    configs.forEach((c) => (c.devtool = false));
   }
   return configs;
 };
