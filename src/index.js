@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 Junpei Kawamoto
+ * Copyright (C) 2019-2020 StoreWise
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -8,7 +8,7 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -36,7 +36,7 @@ const logLevel = {
   "2": "error",
 };
 
-const strToBool = str => str && str.toLowerCase() === "true";
+const strToBool = (str) => str && str.toLowerCase() === "true";
 
 const onShowLog = () => {
   if (!shell.openItem(log.transports.file.file)) {
@@ -100,7 +100,7 @@ app.on("ready", async () => {
     log[logLevel[level.toString()]](msg);
   });
 
-  const onToggleDebugMode = async debug => {
+  const onToggleDebugMode = async (debug) => {
     await setItem(wc, DebugModeKey, debug);
     updateMenu(debug, {
       onQuit: () => mainWindow.close(),

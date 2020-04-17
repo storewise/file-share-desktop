@@ -1,5 +1,11 @@
 {
     "*.js": [
-      "eslint --fix", "git add"
+        "eslint --fix"
     ],
+    "*.{yml,yaml}": [
+        "yamllint"
+    ],
+    "package.json": [
+        "npmPkgJsonLint"
+    ]
 }
