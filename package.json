@@ -1,6 +1,6 @@
 {
   "name": "fileshare-desktop",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "StoreWise File Share App",
   "main": "lib/index.js",
   "scripts": {
